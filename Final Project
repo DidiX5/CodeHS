@@ -20,6 +20,8 @@ def lock_screen():
                     useless = 0
                 os.system('clear')
                 home_screen()
+                break 
+                False
             else:
                 print("Wrong Password!")
                 for i in range(15500000):
@@ -32,6 +34,8 @@ def lock_screen():
                 useless = 0
             os.system('clear')
             home_screen()
+            break 
+            False
         else:
             print("")
             print("Error: Enter Valid Response!")
@@ -64,6 +68,7 @@ def game_selection():
             os.system('clear')
             Horse_Race_Rules()
             break
+            False
         elif game_selec == "Slot Machine":
             print("Launching Application...")
             for i in range(15500000):
@@ -71,6 +76,7 @@ def game_selection():
             os.system('clear')
             Slot_Machine_Rules()
             break
+            False
         elif game_selec == "Random Walk":
             print("Launching Application...")
             for i in range(15500000):
@@ -78,6 +84,7 @@ def game_selection():
             os.system('clear')
             Random_Walk_Rules()
             break
+            False
         elif game_selec == "Shut Down":
             os.system('clear')
             print(" -------------------")
@@ -92,6 +99,7 @@ def game_selection():
                 useless = 0
             os.system('clear')
             break
+            False
         else:
             print("")
             print("Error: Enter Valid Response!")
@@ -127,6 +135,7 @@ Enter [B] to go back...
             os.system('clear')
             Horse_Race_Game()
             break
+            False 
         elif response == "B":
             print("")
             print("Exiting Application...")
@@ -136,6 +145,7 @@ Enter [B] to go back...
             home_screen()
             game_selection()
             break
+            False
         else:
             print("")
             print("Error: Enter Valid Response!")
@@ -167,6 +177,7 @@ Enter [B] to go back...
             os.system('clear')
             Slot_Machine_Game()
             break
+            False
         elif response == "B":
             print("")
             print("Exiting Application...")
@@ -176,6 +187,7 @@ Enter [B] to go back...
             home_screen()
             game_selection()
             break
+            False
         else:
             print("")
             print("Error: Enter Valid Response!")
@@ -207,6 +219,7 @@ Enter [B] to go back...
             os.system('clear')
             Random_Walk_Game()
             break
+            False
         elif response == "B":
             print("")
             print("Exiting Application...")
@@ -216,6 +229,7 @@ Enter [B] to go back...
             home_screen()
             game_selection()
             break
+            False
         else:
             print("")
             print("Error: Enter Valid Response!")
