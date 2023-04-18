@@ -251,5 +251,12 @@ def ShowHorse():
         print("     Start|" + "".join(track) + "|Finish")
         print("")
     print("____________________________________________________________")
+  my_grid = []
+
+for row in range(2):
+    for col in range(3):
+        my_grid[row][col] = "Pranav"
+for i in range(len(my_grid)):
+    print(my_grid[i])
 
 lock_screen()
