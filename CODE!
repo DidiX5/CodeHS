@@ -1,0 +1,29 @@
+#include "util.h"
+
+int main()
+{
+    // Enter your code here
+    // Yearly
+    int tuitionfee = readInt("Cost of tution(Annualy): $");
+    int supplie = readInt("Cost of supplies(Annualy): $");
+    int emergency = readInt("Cost of Emergencies(Annualy): $");
+    int dorm = readInt("Cost of dorms(Annualy): $");
+    
+    int yearly = (tuitionfee) + (supplie) + (emergency) + (dorm);
+    // Semester 
+    int textbook = readInt("Cost of textbooks(per Semester): $");
+    int semester = (textbook * 2);
+    // Monthly
+    int transportation = readInt("Cost of Transportation(monthly): $");
+    int food = readInt("Cost of food(monthly): $");
+    int earning = readInt("Monthly Earnings: $");
+    int housing = readInt("Cost of Housing(monthly): $");
+    int monthly = (earning * 12) - ((transportation * 12) + (food * 12) + (housing * 12));
+    
+    int annualy = monthly + semester + yearly;
+    int fouryearly = 4 * annualy;
+    cout << "Annual Cost: " << annualy << endl;
+    cout <<"Cost for 4 year degree: " << fouryearly << endl;
+    
+    return 0;
+}
